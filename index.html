@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="myContainer flex gap-2 ml-10 mt-10">
+        <div class="listContainer flex flex-col gap-3" id="toDo">
+            <div class="toDo lines">
+                <div class="head flex justify-between">
+                    <h3 class="headings flex">TODO</h3>
+                    <i class="fa-solid fa-ellipsis"></i> 
+                </div>
+                <div class="lines" id="toDoTask">
+                
+                <p class="task" draggable="true">Xengele getmek</p>
+                <p class="task" draggable="true">Yaver usta yanina getmek</p>
+                <p class="task" draggable="true">Mashini moykaya vermek</p>
+                
+                </div>
+
+               
+            </div>
+            <form id="addForm" class="flex gap-2">
+                <button type="submit" class="mybtn ml-2 font-bold">+</button>
+                <input type="text"  id="myInput" class="addInput" placeholder="Add a card">
+                
+            </form>
+            
+        </div>
+        <div class="listContainer flex flex-col gap-4" id="inProgress">
+            <div class="addProgress lines"> 
+                <div class="head flex justify-between">
+                    <h3 class="headings flex">IN PROGRESS</h3>
+                    <i class="fa-solid fa-ellipsis"></i> 
+                </div>
+                <div class="lines" id="progessTask">
+                
+                    <p class="task" draggable="true">Studying</p>
+                    
+                </div>
+            </div>
+            <form  id="addFormProgress" class="flex gap-2">
+                <button type="submit" class="ml-2 font-bold">+</button>
+                <input type="text" id="progressInput" class="addInput" placeholder="Add a card">
+                
+            </form>
+
+        </div>
+        <div class="listContainer flex flex-col gap-4" id="done">
+            <div class="addDone lines">
+                <div class="head flex justify-between">
+                    <h3 class="headings flex">DONE</h3>
+                    <i class="fa-solid fa-ellipsis"></i> 
+                </div>
+                <div class="lines" id="doneTask">
+                
+                    <p class="task" draggable="true">Watching task videos</p>
+                    
+                </div>
+            </div>
+            <form id="doneForm" class="addForm  flex gap-2">
+                <button type="submit" class="ml-2 font-bold">+</button>
+                <input type="text" id="doneInput" class="addInput" placeholder="Add a card">
+                
+            </form>
+        </div>
+<!-- 
+        <div id="recyleBin" class="flex-col flex ml-16 mt-6">
+            <i class="fa-solid fa-recycle"></i>
+            <h4 class="flex">Recyle-bin</h4>
+        </div> -->
+
+    </div>
+    
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
